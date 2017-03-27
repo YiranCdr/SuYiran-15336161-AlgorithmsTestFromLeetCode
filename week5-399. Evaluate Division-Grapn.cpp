@@ -237,33 +237,7 @@ void function(vector<pair<string,string>> & equations,vector<double> & vs,vector
 	}
 }
 
-int main() {
-	vector<pair<string, string>> equations;
-	vector<double>  vs;
-	vector<pair<string, string>> queries;
-	vector<double> results;
-	equations.push_back(make_pair("a", "b"));
-	equations.push_back(make_pair("b", "c"));
-	equations.push_back(make_pair("b", "d"));
-	equations.push_back(make_pair("d", "x"));
-	vs.push_back(5);
-	vs.push_back(3);
-	vs.push_back(2);
-	vs.push_back(7);
-	queries.push_back(make_pair("a", "c"));
-	queries.push_back(make_pair("b", "c"));
-	queries.push_back(make_pair("a", "e"));
-	queries.push_back(make_pair("a", "a"));
-	queries.push_back(make_pair("x", "x"));
-	function(equations, vs, queries, results);
-	cout << results[0] << endl;
-	cout << results[1] << endl;
-	cout << results[2] << endl;
-	cout << results[3] << endl;
-	cout << results[4] << endl;
-	system("pause");
-	return 0;
-}
+
 /*
 Result
 Accpt
